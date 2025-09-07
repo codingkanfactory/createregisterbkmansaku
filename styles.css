@@ -1,0 +1,71 @@
+/* Custom Styles for Register Page */
+
+/* Focus shadow for teal theme */
+.focus\:shadow-teal:focus {
+  box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.1);
+}
+
+/* Teal shadow for buttons */
+.hover\:shadow-teal-lg:hover {
+  box-shadow: 0 8px 25px rgba(45, 212, 191, 0.3);
+}
+
+/* Success notification styles */
+.notification.success {
+  background: #f0fdfa;
+  color: #134e4a;
+  border: 1px solid #5eead4;
+}
+
+/* Error notification styles */
+.notification.error {
+  background: #fef2f2;
+  color: #7f1d1d;
+  border: 1px solid #fca5a5;
+}
+
+/* Loading spinner animation */
+.loading {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { 
+    transform: rotate(360deg); 
+  }
+}
+
+/* Ensure disabled inputs have proper styling */
+input:disabled {
+  background: #f9fafb !important;
+  color: #6b7280 !important;
+  cursor: not-allowed !important;
+}
+
+/* Custom button hover effects */
+.btn-outline:hover {
+  transform: translateY(-1px);
+}
+
+/* Modal backdrop blur enhancement */
+.modal {
+  backdrop-filter: blur(4px);
+}
+
+/* Smooth transitions for all interactive elements */
+.btn,
+input {
+  transition: all 0.3s ease;
+}
+
+/* Enhanced shadow for container */
+.container {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
